@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+
+spring:
+  redis:
+    database: 1
+    host: 192.168.3.142
+    port: 6379
+    jedis:
+      pool:
+        max-active: 300
+        max-idle: 100
+        max-wait: -1
+        min-idle: 0
+    timeout: 5000
+
+
+
+security:
+                                 jwt:
+                                   secret: k09BQnaF
+                                   expiration: 1728000 #20Days
